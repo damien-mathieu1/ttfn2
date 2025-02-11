@@ -1,8 +1,8 @@
-default via 172.24.0.1 dev wlp0s20f3 proto dhcp src 172.24.122.230 metric 600
-default via 192.168.1.1 dev eth0 metric dhcp 800
-default via 192.168.1.2 dev eth0 metric src dhcp 100
-10.42.0.0/24 dev cni0 proto kernel scope link src 10.42.0.1
+default via 10.0.0.1 dev wlan0 proto dhcp src 10.0.50.125 metric 600
+default via 192.168.10.1 dev eth0 metric dhcp 800
+default via 192.168.10.2 dev eth0 metric src dhcp 100
+172.16.0.0/24 dev cni0 proto kernel scope link src 172.16.0.1
 169.254.0.0/16 dev docker0 scope link metric 1000
-172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1
-172.18.0.0/16 dev br-4b38dd8fdaf5 proto kernel scope link src 172.18.0.1
-172.24.0.0/16 dev wlp0s20f3 proto kernel scope link src 172.24.122.230 metric 600
+172.20.0.0/16 dev docker0 proto kernel scope link src 172.20.0.1
+172.21.0.0/16 dev br-example123 proto kernel scope link src 172.21.0.1
+10.0.0.0/16 dev wlan0 proto kernel scope link src 10.0.50.125 metric 600
